@@ -51,3 +51,6 @@ git reset HEAD <file>
 
 #创建SSH Key
 ssh-keygen -t rsa -C "youremail@example.com"
+
+#从Github克隆一个项目
+git clone git@github.com:ergate/Mytry.git
