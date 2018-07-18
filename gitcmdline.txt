@@ -68,3 +68,5 @@ git clone git@github.com:ergate/Mytry.git
 删除分支：git branch -d <name>
 
 分支合并图：git log --graph
+
+this is master!
