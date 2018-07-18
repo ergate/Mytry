@@ -1,0 +1,53 @@
+#设定全局变量：用户名和邮箱
+git config --global user.name "Your Name"
+git config --global user.email "email@example.com"
+
+#创建目录
+mkdir
+
+#变更目录
+cd
+
+#当前目录
+pwd
+
+#初期化仓库
+git init
+
+#提交修改到暂存区
+git add <file>
+
+#删除一个文件
+git rm <file>
+
+#提交修改到仓库
+git commit -m <message>
+
+#查看状态
+git status
+
+#查看差分
+git diff
+git diff HEAD -- readme.txt
+
+#查看日志
+git log
+git log --pretty=oneline
+
+#回退版本
+git reset --hard HEAD^
+git reset --hard 1094a
+
+#查看命令历史
+git reflog
+
+#丢弃工作区的修改
+##还没有被放到暂存区:撤销修改就回到和版本库一模一样的状态
+##已经添加到暂存区后，又作了修改:撤销修改就回到添加到暂存区后的状态
+git checkout -- file
+
+#把暂存区的修改撤销掉（unstage），重新放回工作区
+git reset HEAD <file>
+
+#创建SSH Key
+ssh-keygen -t rsa -C "youremail@example.com"
